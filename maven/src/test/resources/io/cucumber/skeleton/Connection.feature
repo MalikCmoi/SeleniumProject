@@ -1,3 +1,5 @@
+@Connexion
+
 Feature: Test Ztrain Connection
   AS a user I want to test the connection
 
@@ -17,6 +19,7 @@ Feature: Test Ztrain Connection
     And Appuis sur le boutton se connecté
     Then User n'est pas connectée
 
+  @Conneted
   Scenario: Bon mdp et bon login
     Given Ouvrir un page web et se rendre sur le site Ztrain
     When user click sur button de connection

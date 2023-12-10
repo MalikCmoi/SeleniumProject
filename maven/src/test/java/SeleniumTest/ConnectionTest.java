@@ -66,6 +66,7 @@ public class ConnectionTest {
 
         assertEquals(driver.findElement(By.cssSelector(".ant-menu-item")).getText(), "azerty123@azerty123.fr");
 
+        driver.findElement(By.id("simple-popover")).click();
     }
     @Then("User n'est pas connectée")
     public void notConnected(){
